@@ -1,0 +1,38 @@
+#python
+first_names = []
+last_names = []
+
+# Getting info from user
+num_names = int(input("Enter the number of names: "))
+
+for i in range(num_names):
+    first_name = input("Enter the first name: ")
+    last_name = input("Enter the last name: ")
+    first_names.append(first_name)
+    last_names.append(last_name)
+
+# Concat first names with last names
+full_names = []
+for i in range(num_names):
+    full_name = first_names[i] + " " + last_names[i]
+    full_names.append(full_name)
+
+print(full_names)
+
+## using tuples
+first_names = []
+last_names = []
+
+# Getting info from user
+num_names = int(input("Enter the number of names: "))
+
+for i in range(num_names):
+    first_name = input("Enter the first name: ")
+    last_name = input("Enter the last name: ")
+    first_names.append(first_name)
+    last_names.append(last_name)
+
+# using tuple to combine
+full_names = tuple(zip(first_names, last_names))
+
+print(full_names)
